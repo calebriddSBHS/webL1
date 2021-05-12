@@ -1,0 +1,93 @@
+@font-face {
+    font-family: edition;
+    src: url(EDITION_.TTF);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/*these are fonts that can be implicated later in the code*/
+
+html {
+    background-color: white;
+}
+
+a:hover {
+    border-bottom: 3px solid #DCDCDC;
+    color: #DCDCDC;
+}
+/*adds a hover over page links*/
+
+body {
+    display: grid;
+    grid-template-columns: 10% 3fr 3fr 10%;
+    grid-template-rows: auto 2fr 0.5fr;
+    grid-gap: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*this is the grid layout*/
+
+nav {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 60px;
+    font-family: edition;
+    text-align: end;
+    border-bottom: 3px solid white;
+}
+
+section {
+    background-color: #DCDCDC;
+    grid-row: 2;
+    grid-column: 2/4;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid black;
+}
+
+
+.pfp {
+    display: grid;
+    grid-column: 4/5;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.one {
+    list-style: none;
+}
+
+.one li img {
+    border: 2px solid black;
+}
+
+
+.products {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.products li img {
+    width: 42.5%;
+    border: 2px solid black;
+}
+
+.products li h2 {
+    font-size: 15px;
+}
