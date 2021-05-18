@@ -1,0 +1,61 @@
+<!doctype html>
+
+<head>
+    <title>newage.sizing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calculate() {
+            var data = document.getElementById("sizeData").value;
+            if (data <= 31) {
+                document.getElementById("answer").innerHTML = 'You are smaller than the smallest size.';
+            }
+            if (data >= 32 && data < 34) {
+                document.getElementById("answer").innerHTML = 'Your size is XXS';
+            }
+            if (data >= 34 && data < 36) {
+                document.getElementById("answer").innerHTML = 'Your size is XS';
+            }
+            if (data >= 36 && data < 38) {
+                document.getElementById("answer").innerHTML = 'Your size is S';
+            }
+            if (data >= 38 && data < 40) {
+                document.getElementById("answer").innerHTML = 'Your size is M';
+            }
+            if (data >= 40 && data < 42) {
+                document.getElementById("answer").innerHTML = 'Your size is L';
+            }
+            if (data >= 42 && data < 44) {
+                document.getElementById("answer").innerHTML = 'Your size is XL';
+            }
+            if (data >= 44 && data < 46) {
+                document.getElementById("answer").innerHTML = 'Your size is XXL';
+            }
+            if (data > 47) {
+                document.getElementById("answer").innerHTML = 'You are larger than the largest size.';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="new%20age%20logo.png" alt="logo">
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="sizing.html">Sizing</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="pfp">
+        <img src="pfp.png" title="Sign-In" alt="pfp">
+    </div>
+    <section>
+        <h1>Hoodie Size Calculation:</h1>
+        <p>Enter you Chest Size in inches to recieve your size.</p>
+        <input type="number" name="size" id="sizeData">
+        <button type="submit" value="submit" onclick="calculate()">Submit</button>
+        <p id="answer"></p>
+    </section>
+</body>
